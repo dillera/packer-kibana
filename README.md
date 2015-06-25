@@ -3,7 +3,7 @@ Kibana AWS AMI with Packer
 
 Install [Packer](https://www.packer.io/) and add it to your PATH.
 
-Create your logstash AMI in AWS, using your access and secret keys.
+Create your kibana AMI in AWS, using your access and secret keys.
 
 This also installs [Consul](https://www.consul.io/). This will need to be configured separately as it would be a good
 idea to join an existing consul cluster.
@@ -14,7 +14,7 @@ packer build \
   -var 'aws_secret_key=your_secret' \
   -var 'aws_vpc_id=your_vpc_id' \
   -var 'aws_subnet_id=your_subnet_id' \
-  logstash.json
+  kibana.json
 ```
 
 Or
